@@ -1,0 +1,34 @@
+
+<br>
+<br>
+
+{{#each listOfPaintings}}
+
+Posted on: {{this.updatedAt}}
+
+<div>
+
+<p>{{this.title}} by {{this.artist}} </p>
+<div>
+Buy Now Price: ${{this.buyPrice}}
+</div>
+<div>
+{{#if this.longtermLease}}
+Long-term Listing
+Monthly Price: $ {{ this.buyPrice * .15 / 12 }}
+{{/if}}
+{{#unless this.longtermLease}}
+Short-term Listing
+Monthly Price: $ {{monthlyPrice}}
+{{/unless}}
+
+</div>
+<a href="/paintings/{{this._id}}">See Details</a>
+
+
+</div>
+
+<hr>
+
+
+{{/each}}

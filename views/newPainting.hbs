@@ -1,0 +1,29 @@
+<h2>List a Painting For Lease</h2>
+
+
+<form action="/paintings/create" method="post">
+
+<label>Title</label>
+<input type="text" name="title">
+<br>
+
+
+<label>Artist</label>
+<input type="text" name="artist">
+<br>
+
+<label>Description</label>
+<textarea name="description" cols="30" rows="10"></textarea>
+<br>
+
+<label>buyPrice</label>
+<input type="number" name="buyPrice">
+<br>
+<input type="radio" name="longTerm" value="true"> Long-term(yearly)
+<br>
+<input type="radio" name="longTerm" value="false"> Short-term(monthly)
+<br>
+<button type="submit">Publish Painting</button>
+
+
+</form>

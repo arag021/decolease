@@ -1,0 +1,20 @@
+
+
+<hr>
+{{thePainting.title}}
+<hr>
+<h2>Artist:</h2>
+{{thePainting.artist.name}} {{thePainting.artist.lastName}}
+<p>{{thePainting.artist.birthday}}</p>
+<p>{{thePainting.artist.nationality}}</p>
+
+<p>Description:</p>
+{{thePainting.description}}
+<hr>
+
+<a href="/paintings/{{thePainting._id}}/edit">Edit This Painting</a>
+
+
+<form action="/paintings/{{thePainting._id}}/delete" method="post">
+<button>Delete This Painting</button>
+</form>

@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px; }
+
+body {
+  padding: 50px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #84adf0b6; }
+
+a {
+  color: #00B7FF; }
+
+.navbar {
+  width: 85%;
+  border-radius: 15px; }
+
+li.nav-item1 {
+  padding-top: 7px; }
+
+.navbar-nav > li {
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.navbar-nav {
+  font-size: 22px; }
+
+a.navbar-brand {
+  font-size: 48px;
+  font-family: 'Poiret One', cursive; }
+
+#navbarNav {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly; }
+
+.signupButton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px; }
+
+#carouselExampleIndicators {
+  width: 30%; }
+
+.slideshow {
+  height: 100px; }
+
+/*# sourceMappingURL=style.css.map */

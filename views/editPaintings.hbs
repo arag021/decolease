@@ -1,0 +1,32 @@
+
+<h2>{{thePainting.title}}</h2>
+<h2>Edit this Painting</h2>
+
+
+<form action="/paintings/{{thePainting._id}}/update" method="post">
+
+<br>
+<label>Title</label>
+<input type="text" name="title" value="{{thePainting.title}}">
+<br>
+<br>
+
+<label>Artist</label>
+<input type="text" name="artist" value="{{thePainting.artist}}">
+
+<br>
+<br>
+
+<label>Description</label>
+<textarea name="description" cols="30" rows="10" >{{thePainting.description}}</textarea>
+<br>
+<br>
+
+<label>Buy Price</label>
+<input type="number" name="buyPrice" value="{{thePainting.buyPrice}}">
+<br>
+<br>
+<button type="submit">Save Painting</button>
+
+
+</form>

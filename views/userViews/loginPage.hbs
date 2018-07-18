@@ -1,0 +1,21 @@
+<br>
+<h1>Login</h1>
+
+<form action="/login" method="post">
+  <label>Username</label>
+  <input type="text" name="username">
+
+  <label>Password</label>
+  <input type="password" name="password">
+
+  <button>Submit</button>
+
+</form>
+
+{{#if message}}
+<div>{{message}}</div>
+{{/if}}
+<hr>
+<div class="signupButton">
+<a href="/signup" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Sign Up Now</a>
+</div>
