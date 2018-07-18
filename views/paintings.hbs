@@ -15,7 +15,7 @@ Buy Now Price: ${{this.buyPrice}}
 <div>
 {{#if this.longtermLease}}
 Long-term Listing
-Monthly Price: $ {{ this.buyPrice * .15 / 12 }}
+Monthly Price: $ {{ monthlyPrice }}
 {{/if}}
 {{#unless this.longtermLease}}
 Short-term Listing

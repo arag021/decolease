@@ -30,7 +30,7 @@ router.get('/painting/new', (req, res, next) =>{
 
 router.post('/paintings/create', (req, res, next)=>{
   const price = req.body.buyPrice;
-  const longTerm = req.body.longTerm;
+  const longtermLease = req.body.longTerm;
 
   if(longtermLease === true){
     const monthlyPrice = price * .15 / 12
