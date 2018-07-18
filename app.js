@@ -32,7 +32,7 @@ const User          = require('./models/user');
 
 mongoose.Promise = Promise;
 mongoose
-  .connect(heroku addons:open mongolab, {useMongoClient: true})
+  .connect(process.env.MONGODB_URI, {useMongoClient: true})
   .then(() => {
     console.log('Connected to Mongo!')
   }).catch(err => {
