@@ -32,7 +32,7 @@ const User          = require('./models/user');
 
 mongoose.Promise = Promise;
 mongoose
-  .connect('mongodb://localhost/artleasingapp', {useMongoClient: true})
+  .connect(heroku addons:open mongolab, {useMongoClient: true})
   .then(() => {
     console.log('Connected to Mongo!')
   }).catch(err => {

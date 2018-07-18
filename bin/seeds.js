@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
 
 
-const dbName = 'artleasingapp'
-mongoose.connect(`mongodb://localhost/${dbName}`);
+const dbName = 'DecoLease'
+mongoose.connect(process.env.MONGODB_URI);
