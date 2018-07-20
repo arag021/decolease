@@ -1,0 +1,28 @@
+{{!-- 
+ title: String,
+  artist: String,
+  description: String,
+  buyPrice: Number,
+  longtermLease: Boolean,
+  monthlyPrice: Number,
+  imgPath --}}
+<hr>
+<h2>{{thePainting.title}}</h2>
+<hr>
+<h4>Artist: {{thePainting.artist}}</h4>
+<img src="{{thePainting.imgPath}}">
+
+<p>Description: {{thePainting.description}}</p>
+
+<hr>
+<div>Buy Price: ${{thePainting.buyPrice}}</div>
+<div>Monthly Price: ${{thePainting.monthlyPrice}}</div>
+<br>
+<br>
+
+<a href="/paintings/{{thePainting._id}}/edit">Edit This Painting</a>
+
+
+<form action="/paintings/{{thePainting._id}}/delete" method="post">
+<button>Delete This Painting</button>
+</form>

@@ -12,16 +12,23 @@ Posted on: {{this.updatedAt}}
 <div>
 Buy Now Price: ${{this.buyPrice}}
 </div>
+<br>
+<div class="description">
+  Description: {{this.description}}
+</div>
 <div>
 {{#if this.longtermLease}}
 Long-term Listing
-Monthly Price: $ {{ monthlyPrice }}
+Monthly Price: $ {{ this.monthlyPrice }}
 {{/if}}
 {{#unless this.longtermLease}}
 Short-term Listing
-Monthly Price: $ {{monthlyPrice}}
+Monthly Price: $ {{this.monthlyPrice}}
 {{/unless}}
 
+<img id="listedImage" src="{{this.imgPath}}">
+
+<br>
 </div>
 <a href="/paintings/{{this._id}}">See Details</a>
 

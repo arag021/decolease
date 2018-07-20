@@ -6,7 +6,7 @@ header{
 
 body {
   padding: 50px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Asap', sans-serif;
   background-color: #84adf0b6;
 }
 
@@ -46,17 +46,24 @@ a.navbar-brand{
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
-#carouselExampleIndicators{
-  width: 30%;
- 
-}
+
 
 .slideshow{
   height: 100px;
   // display: flex;
   // justify-content: center;
 
+}
+
+#listedImage{
+  width: 200px;
+  // float: right;
+}
+
+.fade{
+opacity: 0;
+font-size: 20px;
 }

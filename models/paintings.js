@@ -10,8 +10,8 @@ const paintingSchema = new Schema({
   description: String,
   buyPrice: Number,
   longtermLease: Boolean,
-  monthlyPrice: Number
-  
+  monthlyPrice: Number,
+  imgPath: String,
 }, {
   timestamps: true
 });
